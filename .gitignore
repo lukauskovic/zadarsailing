@@ -10,4 +10,4 @@
 .DS_Store
 
 ##other
-#node_modules/
+node_modules/
