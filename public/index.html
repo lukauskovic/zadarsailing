@@ -182,44 +182,35 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="row">
 					<div class="col-md-6 animate-box">
-						<div class="row">
-
-							<div class="col-md-12">
-								<div class="pricing-center main-nav">
-								<span class="icon">
-									<i class="icon-star2"></i>
-								</span>
-									<h3>WHOLE DAY SAILING</h3>
-									<p>Enjoy in the whole day in the open sea. Price that is highlighted below refers to group of 8 people max</p>
-									<h4>Price: <b>400€</b></h4>
-									<h4>Departure time: <b>9AM - 6PM</b></h4>
-									<p><a href="#" data-nav-section="contact" class="btn btn-primary btn-lg">Book Whole Day</a></p>
-								</div>
-							</div>
-
+						<div class="pricing-center main-nav">
+						<span class="icon">
+							<i class="icon-star2"></i>
+						</span>
+							<h3>DAILY SAILING</h3>
+							<p>Come enjoy a beautiful day of sailing, away from the crowded beaches and parking lots. From the moment you board the boat, relax and soak up the Mediterranean, our skipper will handle the rest. The skipper will show you absolutely mesmerising locations, you can anchor and go for a swim, or maybe go for a walk or a lunch/coffe to one of the many lovely island. Anyone interested is welcomed to try sailing the boat.
+							</p>
+							<h4>Price: <b>400€</b></h4>
+							<h4>Departure time: <b>9AM - 5PM</b></h4>
+							<p><a href="#" data-nav-section="contact" class="btn btn-primary btn-lg">Book Whole Day</a></p>
 						</div>
 					</div>
-					<div class="col-md-6 animate-box" data-animate-effect="fadeIn">
 
-						<div class="row">
-
-							<div class="col-md-12">
-								<div class="pricing-center main-nav">
-								<span class="icon">
-									<i class="icon-star-outlined"></i>
-								</span>
-									<h3>HALF DAY SAILING</h3>
-									<p>Whole day is too much? Then this is the perfect option for you. Half day option can be book for the group as well as for the single person.</p>
-									<h4>Price: <b>250€</b> / <b>40€ per person</b></h4>
-									<h4>Departure time: <b>9AM - 1PM</b></h4>
-									<p><a href="#" data-nav-section="contact" class="btn btn-primary btn-lg">Book Half Day</a></p>
-								</div>
-							</div>
-
+					<div class="col-md-6 animate-box">
+						<div class="pricing-center main-nav">
+						<span class="icon">
+							<i class="icon-star-outlined"></i>
+						</span>
+							<h3>HALF DAY SAILING</h3>
+							<p>Kick back, relax  enjoy the beautiful views and swim in the crystal clear sea. Pick a time of day that suits you best and set sail! Be amazed by many islands of this archipelago and create everlasting memories! Anyone interested is welcomed to try sailing the boat.</p>
+							<h4>Price: <b>250€</b> / <b>40€ per person</b></h4>
+							<h4>Departure time: <b>9AM - 1PM / 04PM – 08PM </b></h4>
+							<p><a href="#" data-nav-section="contact" class="btn btn-primary btn-lg">Book Half Day</a></p>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
@@ -407,17 +398,51 @@
 		<div class="overlay"></div>
 		<div class="page-container">
 			<div class="row text-center">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-12">
-							<span class="icon">
-								<i style="font-size:100px;color: white;" class="ti-settings"></i>
-							</span>
-							<h3>Booking Form is still under construction! Comming soon</h3>
-							<h3>Till then, be sure to get in touch with us via mail: <b>zadar.sailing@gmail.com</b></h3>
-						</div>
+
+
+				<div class="form row">
+					<div class="form-box">
+						<h1>Book now!</h1>
+						<form onsubmit="onFormSuccess(this, event)">
+							<div class="col-md-6">
+								<div class="input-group">
+									<input name="full name" type="text" id="name" autocomplete="off" onblur="checkInput(this)" required/>
+									<label for="name">Full Name *</label>
+								</div>
+								<div class="input-group">
+									<input name="email" type="email" id="email" onblur="checkInput(this)" required />
+									<label for="email">Email *</label>
+								</div>
+								<div class="input-group">
+									<input name="phone" type="tel" id="phone" onblur="checkInput(this)" />
+									<label for="phone">Phone</label>
+								</div>
+							</div>
+							<div class="col-md-6">
+									<div class="input-group">
+										<select name="plan" id="sel1" required>
+											<option disabled  selected hidden value="">Sailing Plan *</option>
+											<option>Daily Sailing</option>
+											<option>Half Day Sailing</option>
+											<option>Sunset Sailing</option>
+										</select>
+									</div>
+									<div class="input-group">
+										<input name="groupSize" type="number" max="8" id="group-size" onblur="checkInput(this)" required/>
+										<label for="group-size">Group Size *</label>
+									</div>
+								<div class="input-group">
+									<input name="extra" type="text" id="extra" autocomplete="off" onblur="checkInput(this)" />
+									<label for="extra">Extra Notes</label>
+								</div>
+							</div>
+							<input type="submit" value="Enter"/>
+						</form>
 					</div>
 				</div>
+
+						</div>
+					</div>
 			</div>
 		</div>
 	</div>

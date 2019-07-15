@@ -393,3 +393,23 @@
 
 
 }());
+
+function checkInput(input) {
+	if (input.value.length > 0) {
+		input.className = 'active';
+	} else {
+		input.className = '';
+	}
+}
+
+function onFormSuccess(form, e) {
+	e.preventDefault();
+	var data = {};
+	for (var i = 0; i < form.length; i++) {
+		var input = form[i];
+		if (input.name) {
+			data[input.name] = input.value;
+		}
+	}
+	console.log(data)
+}
