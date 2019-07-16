@@ -197,7 +197,7 @@
 							<p>*boat, fuel, skipper includen in price*</p>
 							<h4>Departure time: <b>9AM - 5PM</b></h4>
 							<p>*boat-elan 384, max 8 persons*</p>
-							<p><a href="#" data-nav-section="contact" class="btn btn-primary btn-lg">Book Whole Day</a></p>
+							<p><a id="buttonDaily" href="#" data-nav-section="contact" class="btn btn-primary btn-lg">Book Daily Sailing</a></p>
 						</div>
 					</div>
 
@@ -212,7 +212,7 @@
 							<p>*boat, fuel, skipper includen in price*</p>
 							<h4>Departure time: <b>9AM - 1PM / 04PM – 08PM </b></h4>
 							<p>*boat-fiumanka 33, max 8 persons*</p>
-							<p><a href="#" data-nav-section="contact" class="btn btn-primary btn-lg">Book Half Day</a></p>
+							<p><a  id="buttonHalf" href="#" data-nav-section="contact" class="btn btn-primary btn-lg">Book Half Day</a></p>
 						</div>
 					</div>
 
@@ -231,7 +231,7 @@
 							<p>*boat, fuel, skipper includen in price*</p>
 							<h4>Departure time: <b>9AM - 5PM</b></h4>
 							<p>*boat-elan 384 / fiumanka33*</p>
-							<p><a href="#" data-nav-section="contact" class="btn btn-primary btn-lg">Book Whole Day</a></p>
+							<p><a id="buttonSunset" href="#" data-nav-section="contact" class="btn btn-primary btn-lg">Book Whole Day</a></p>
 						</div>
 					</div>
 
@@ -460,9 +460,9 @@
 										<div class="input-group">
 											<select name="plan" id="sel1" required>
 												<option disabled  selected hidden value="">Sailing Plan *</option>
-												<option>Daily Sailing</option>
-												<option>Half Day Sailing</option>
-												<option>Sunset Sailing</option>
+												<option value="1">Daily Sailing</option>
+												<option value="2">Half Day Sailing</option>
+												<option value="3">Sunset Sailing</option>
 											</select>
 										</div>
 										<div class="input-group">

@@ -46,3 +46,12 @@ function setMinDate() {
 }
 
 setMinDate()
+$('#buttonDaily').click(function () {
+    $('#sel1').val('1')
+})
+$('#buttonHalf').click(function () {
+    $('#sel1').val('2')
+})
+$('#buttonSunset').click(function () {
+    $('#sel1').val('3')
+})
