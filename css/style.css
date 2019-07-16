@@ -1867,6 +1867,7 @@ form label{
 .pricing-center h4{
     color:#777;
     font-size:20px;
+    margin: 0;
 }
 .pricing-center p{
     color:#777;
@@ -1896,7 +1897,7 @@ form label{
     line-height:100px;
     color:#C0C0C0
 }
-.pricing-center h3,.pricing-center p, .pricing-center h4{
+.pricing-center h3,.pricing-center p{
     margin-bottom:30px
 }
 .pricing-center h3{
@@ -1991,4 +1992,18 @@ form label{
 }
 .form-box input[type="submit"]:hover, input[type="submit"]:focus {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#form_success{
+    display: none;
+}
+#form_success i{
+    font-size:150px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+#form_success h2{
+    padding-top: 30px;
+    font-size: 35px;
 }
