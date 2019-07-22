@@ -328,6 +328,7 @@ figure,h1,h2,h3,h4,h5,h6{
     right:0;
     bottom:0;
     background:rgba(0,0,0,0.5);
+    filter: grayscale(0);
     -webkit-transition:.5s;
     transition:.5s
 }
@@ -1495,6 +1496,7 @@ form label{
     bottom: 0;
     left: 0;
     right: 0;
+    filter: grayscale(100%);
 }
 .page-card-item .page-text{
     padding:0 10px 10px 20px;
@@ -1556,7 +1558,8 @@ form label{
 .page-card-item:focus img,.page-card-item:hover img{
     -webkot-transform:scale(1.2);
     -webkit-transform:scale(1.2);
-    transform:scale(1.2)
+    transform:scale(1.2);
+    filter: grayscale(0);
 }
 .page-card-item:focus span.btn,.page-card-item:hover span.btn{
     opacity:1;
