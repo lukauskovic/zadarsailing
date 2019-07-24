@@ -9,7 +9,8 @@
         "body-parser": "^1.19.0",
         "express": "^4.17.1",
         "express-http-to-https": "^1.1.4",
-        "gulp-live-server": "0.0.31"
+        "gulp-live-server": "0.0.31",
+        "pug": "^2.0.4"
     },
     "devDependencies": {
         "del": "^5.0.0",

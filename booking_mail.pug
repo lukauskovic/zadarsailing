@@ -1,0 +1,37 @@
+html
+    head
+        title Booking Request
+        style.
+            td{
+                padding: 15px;
+                font-size: 20px;
+                padding-left: 40px;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+            body{
+                width : 210mm;
+                margin: auto;
+            }
+    body
+        table(style={'width': '100%','padding': '25mm', 'border-collapse': 'collapse'})
+            tr
+                th(style={'color': '#E00000', 'font-size': '40px', 'padding': '20px', 'border-bottom': '1px solid black'}) BOOKING REQUEST
+            tr
+                td(style={'padding-left': '20px'}) Hello there! Someone made a booking request on #{nowDate}. Booking information are listed below.
+            tr
+                td Full Name : #[strong #{fullName}]
+            tr
+                td E-mail : #[strong #{email}]
+            tr
+                td Phone : #[strong #{phone}]
+            tr
+                td Requested date : #[strong #{date}]
+            tr
+                td Requested Plan : #[strong #{plan}]
+            tr
+                td Group Size : #[strong #{groupSize}]
+            if extra
+                tr
+                    td Extra Notes : #[strong #{extra}]
+        div(style={'border-top': '1px solid black', 'text-align': 'center', 'margin-top': '30px'})
+            img(src='fonts/logo.png', alt='logo', style={'width': '150px', 'padding-top': '20px'})

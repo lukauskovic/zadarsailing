@@ -1,10 +1,12 @@
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
+const bookingMail = process.env.BOOKING_MAIL
 const redirectToHTTPS = require('express-http-to-https').redirectToHTTPS
 const bodyParser = require('body-parser')
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY || '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');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY;
+const pug = require('pug');
 
 
 //configuration
@@ -25,12 +27,22 @@ app.listen(port, function () {
     console.log('server is listening on port: ' + port)
 })
 
-function sendMail(data) {
+function sendMail(data){
+    const today = new Date();
+    const date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()
+    const time = today.getHours() + ":" + today.getMinutes()
+    const reqDate = new Date(data['date'])
+    data['date'] = reqDate.getDate()+'/'+(reqDate.getMonth()+1)+'/'+reqDate.getFullYear()
+    const nowDate = date+' '+time;
+    if (data.plan === '1') data['plan'] = 'Daily Sailing'
+    else if (data.plan === '2') data['plan'] = 'Half Day Sailing'
+    else if (data.plan === '3') data['plan'] = 'Sunset Sailing'
+    data['nowDate'] = nowDate
     const msg = {
-        to: 'uskovicluka@gmail.com',
+        to: bookingMail,
         from: 'booking@zadarsailing.com',
         subject: 'Booking Request',
-        html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+        html: pug.renderFile('./booking_mail.pug', data)
     }
-        sgMail.send(msg).then(resolve).catch(reject)
+    sgMail.send(msg)
 }
