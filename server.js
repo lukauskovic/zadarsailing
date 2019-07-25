@@ -4,10 +4,9 @@ const port = process.env.PORT || 3000
 const bookingMail = process.env.BOOKING_MAIL
 const redirectToHTTPS = require('express-http-to-https').redirectToHTTPS
 const bodyParser = require('body-parser')
-const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY;
+const sgMail = require('@sendgrid/mail')
 const pug = require('pug');
-
+sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 //configuration
 app.use(bodyParser.json());
