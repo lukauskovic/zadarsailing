@@ -20,13 +20,7 @@ fetch('https://www.instagram.com/explore/tags/zadarsailing?__a=1', opts).then(fu
 
 
 function initSctructure(image, isFirstItem){
-    var div = document.createElement("div");
-    div.classList.add('item');
-    if (isFirstItem) div.classList.add('active');
-    var img = document.createElement('img');
-    div.appendChild(img);
-    img.setAttribute('src', image);
-    carousel.appendChild(div);
+
 }
 function load(images){
     for (var i = 0; i<images.length;i++){
