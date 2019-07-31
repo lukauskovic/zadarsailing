@@ -1988,7 +1988,11 @@ form label{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     background-color: rgba(224,0,0,0.1);
 }
-
+@media screen and (max-width:600px){
+    .form-box{
+        max-width: none;
+    }
+}
 .form-box h1 {
     color: white;
     letter-spacing: 1px;
