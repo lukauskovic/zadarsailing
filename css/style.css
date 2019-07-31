@@ -1891,6 +1891,12 @@ form label{
         height: 90%;
     }
 }
+@media screen and (max-width:550px){
+    #page-pricing:before{
+        -webkit-transform:skewY(0deg);
+        top: 12%;
+    }
+}
 .pricing-center h4{
     color:darkred;
     font-size:20px;
