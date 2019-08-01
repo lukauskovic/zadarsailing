@@ -836,6 +836,9 @@ form label{
     list-style:none;
     line-height:1
 }
+#page-footer p{
+    color: black;
+}
 #page-footer .page-footer-links li a{
     text-decoration:none
 }
