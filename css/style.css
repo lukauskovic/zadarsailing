@@ -1664,8 +1664,6 @@ form label{
     border:2px solid #E00000
 }
 #page-faq{
-    padding-top:20em;
-    margin-top:-20em;
     position:relative
 }
 #page-faq:before{
